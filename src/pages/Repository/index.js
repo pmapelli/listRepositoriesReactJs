@@ -65,6 +65,10 @@ export default class Repository extends Component {
       },
     });
 
+    if (response.data.length === 0 && page > 1) {
+      this.handlePage('back');
+    }
+
     this.setState({ issues: response.data });
   };
 

@@ -59,9 +59,7 @@ export const List = styled.ul`
   li {
     padding: 15px 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 
     & + li {
       border-top: 1px solid #eee;
@@ -70,6 +68,17 @@ export const List = styled.ul`
     a {
       color: #7159c1;
       text-decoration: none;
+      margin-left: auto;
     }
   }
+`;
+
+export const DeleteButton = styled.button`
+  background: #ff0000;
+  color: white;
+  border: 0;
+  padding: 0 15px;
+  border-radius: 4px;
+  height: 20px;
+  margin-left: 10px;
 `;
